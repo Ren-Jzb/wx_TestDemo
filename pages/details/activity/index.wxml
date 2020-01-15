@@ -1,0 +1,61 @@
+<!--pages/details/activity/index.wxml-->
+<scroll-view scroll-y="true" bindscrolltolower="searchScrollLower" style="height: 100%;">
+  <view class='wrapper'>
+    <block wx:for="{{dataList}}" wx:for-item="item" wx:key="unique">
+      <view class='item-view'>
+        <view class='item-value'>{{item.operateDate}}</view>
+        <view class='line-horizontal'></view>
+        <view>
+          <text class='item-name'>{{item.customerName}}</text>
+          <text class='item-bed'>{{item.roomName}}室{{item.bedNumber}}床</text>
+        </view>
+        <view>
+          <text class='item-value'>老人现经体检显示患有<text class='item-tag'>{{item.diagnosis}}</text>等慢性疾病。由于老人年事已高，加之其身患有的疾病，在我院未来的日常生活中可能引起
+          <text class='item-tag'>{{item.consequence}}</text>等后果，特此告知家属及监护人，请监护人及家属遵照医嘱和客观事实，并积极配合好相关工作。</text>
+        </view>
+        <view>
+          <text>告知日期:</text>
+          <text class='item-value'>{{item.informingDate}}</text>
+        </view>
+        <view>
+          <text>告知人:</text>
+        </view>
+        <view>
+          <image src='{{gzrImageUrl+item.informingQm}}' lazy-load='true'></image>
+        </view>
+        <view>
+          <text>被告知日期:</text>
+          <text class='item-value'>{{item.nunciatusDate}}</text>
+        </view>
+        <view>
+          <text>被告知人:</text>
+        </view>
+        <view>
+          <image src='{{bgzrImageUrl+item.nunciatusQm}}' lazy-load='true'></image>
+        </view>
+        <view>
+          <text>备注:</text>
+          <text class='item-value'>{{item.remark}}</text>
+        </view>
+        <view>
+          <text>操作人:</text>
+          <text class='item-value'>{{item.RealName}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <view class="load-more-wrap" hidden='{{showLoading}}'>
+    <block wx:if="{{hasMore}}">
+      <view class="load-content">
+        <text class="weui-loading" />
+        <text class="loading-text">加载中</text>
+      </view>
+    </block>
+    <block wx:else>
+      <view class="load-content">
+        <text>没有更多内容了</text>
+      </view>
+    </block>
+  </view>
+</scroll-view>

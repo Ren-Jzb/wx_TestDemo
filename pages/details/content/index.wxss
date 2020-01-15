@@ -1,0 +1,164 @@
+.top {
+  display: flex;
+  flex-direction: column;
+  background-color: #e6e4db;
+}
+
+.top-right {
+  display: flex;
+  align-items: center;
+  padding: 20rpx;
+}
+
+.top image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.top text {
+  color: #76766e;
+  font-size: 28rpx;
+}
+
+ec-canvas {
+  width: 100%;
+  height: 300rpx;
+}
+
+.top-bottom-item {
+  display: flex;
+  flex-direction: row;
+}
+
+.top-bottom-info {
+  flex: 1;
+  padding: 10rpx 40rpx;
+}
+
+.info-name {
+  font-size: 26rpx;
+  color: #76766e;
+  line-height: 60rpx;
+}
+
+.info-value {
+  font-size: 30rpx;
+  color: #3b616e;
+  float: right;
+  line-height: 60rpx;
+  font-weight: bold;
+}
+
+.info-value.active::after {
+  content: "人";
+  color: #76766e;
+  font-weight: normal;
+  margin-left: 10rpx;
+}
+
+.top-bottom-item1 {
+  display: flex;
+  flex-direction: row;
+  padding: 10rpx 40rpx;
+}
+
+.info-box {
+  flex: 1;
+  overflow-x: scroll;
+  margin-left: 40rpx;
+  text-align: right;
+  line-height: 60rpx;
+}
+
+.info-value1 {
+  font-size: 30rpx;
+  color: #3b616e;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.info-wrapper {
+  display: flex;
+  flex-direction: row;
+  background-color: #dbd8cb;
+  padding: 20rpx 0rpx;
+}
+
+.info-item {
+  flex: 1;
+}
+
+.info-title {
+  font-size: 30rpx;
+  color: #76766e;
+  text-align: center;
+}
+
+.info-num {
+  font-size: 30rpx;
+  color: #3b616e;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10rpx;
+}
+
+.menue-box {
+  display: flex;
+  flex-direction: row;
+  background-color: #4e7282;
+}
+
+.menue-item {
+  flex: 1;
+  height: 248rpx;
+}
+
+navigator {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menue-item .menu-more {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menue-img {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.menue-text {
+  font-size: 28rpx;
+  color: #fff;
+  margin-top: 20rpx;
+}
+
+.line-vertical {
+  width: 2rpx;
+  background-color: #b8bfb8;
+}
+
+.line-vertical-1 {
+  width: 2rpx;
+  background-color: #205264;
+}
+
+.line-horizontal {
+  height: 2rpx;
+  background-color: #205264;
+}
+
+.line-horizontal-1 {
+  height: 2rpx;
+  background-color: #ddd;
+  margin: 0rpx 20rpx 20rpx 20rpx;
+}

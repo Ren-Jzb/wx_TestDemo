@@ -1,0 +1,22 @@
+<!--pages/Login/index.wxml-->
+<view class='wrapper'>
+  <view class='top'>
+    <image src="/image/wechatHL.png" mode="cover"></image>
+  </view>
+
+  <view class='login-box'>
+    <form bindsubmit='login'>
+      <view class='menu'>
+        <!-- <image src='/image/icon-username.png'></image> -->
+        <input placeholder="请输入姓名" placeholder-style="color:#fff" name="username"/>
+      </view>
+      <view class='menu'>
+        <!-- <image src='/image/icon-password.png'></image> -->
+        <input placeholder="请输入密码" placeholder-style="color:#fff" password='true' name="password"/>
+      </view>
+      <button form-type='submit' class='login'>登录</button>
+    </form>
+
+  </view>
+
+</view>
